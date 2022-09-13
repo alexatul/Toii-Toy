@@ -1,0 +1,357 @@
+*{
+    padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+}
+
+body, html{
+    font-family: 'Goudy Old Style';
+    height: 100%;
+    margin: 0;
+}
+.headBox{
+    position: relative;
+    width: 100%;
+}
+/*LOGO*/
+.logo{
+    position: relative;
+    margin-left: 50px;
+    margin-right: 30px;
+    width: 100px;
+    background-color: transparent;
+    float: left;
+}
+/*SEARCH BOX*/
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  margin-top: 25px;
+}
+form {
+  color: #555;
+  display: flex;
+  padding: 2px;
+  border: 2px solid #555;
+  border-radius: 5px;
+  margin: 0 0 30px;
+}
+.headBox .container {
+  float: left;
+}
+.headBox input[type=text] {
+  padding: 6px;
+  font-size: 17px;
+  width: 400px;
+  height:40px;
+  border: none;
+  font-style: italic;  
+  background-color: transparent;
+
+}
+.headBox .container button {
+  float: right;
+  padding: 6px 5px;
+  margin-right: 5px;
+  background: transparent;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  background: center;
+  color: #555;
+}
+.logo, .headBox, .container{
+    display: inline-block;
+}
+
+/*CART*/
+.container-cart{
+    background: transparent;
+    font-size: 20px;
+    float: right;
+    display: inline-block;  
+    margin-right: 50px;
+    padding-top: 35px;    
+}
+.container-cart a{
+    text-decoration: none;   
+}
+.fa-shopping-cart{
+    margin-right: 10px;
+    font-size: 20px;
+}
+#clearfix {
+  content: "";
+  clear: both;
+  overflow-y: hidden;
+}
+
+/*MENU*/
+.menu-bar{
+    background-color: rgb(155, 68, 68);
+    text-align: center;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: rgb(238, 231, 222);
+}
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+    font-size: 20px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: rgb(238, 231, 222);
+}
+.sub-menu1{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu1{
+    display: block;
+    position: absolute;
+    background-color: rgb(155, 68, 68);
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.menu-bar ul li:hover .sub-menu1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu1 ul li:last-child{
+    border-bottom: none;
+}
+.fa-bars{
+    float: left;
+    margin-right: 7px;
+    align-items: center;
+}
+.fa-angle-right{
+    float: right;
+}
+.sub-menu2{
+    display: none;
+}
+.hover-me:hover .sub-menu2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background-color: rgb(155, 68, 68);
+}
+
+/*TITLE*/
+/*BACKGROUND IMAGE*/
+.bg {
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.233), rgba(0, 0, 0, 0.036)), url("images/background.jpg");
+    height: 70%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title{
+    font-size: 4vw;
+    font-family: 'Goudy Old Style';
+    color: rgb(210, 3, 3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.paragraph{
+    font-size: 2vw;
+    color: #555;
+    font-style: italic;
+    text-indent: 20px;
+    padding-top: 10px;
+}
+
+/*CARD GRID*/
+.row {
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  padding: 0 40px;
+}
+.column {
+  -ms-flex: 30%; 
+  flex: 30%;
+  max-width: 30%;
+  padding: 0 40px;
+}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.text{
+    color: rgb(55, 102, 212);
+    font-weight: bold;
+    margin-top: 0;
+    padding: 0;
+    font-size: 22px;
+    text-align: center;
+}
+.price {
+    color: rgb(155, 68, 68);
+    font-size: 20px;
+     background-color: rgba(172, 171, 171, 0.463);
+     padding: 5px;
+    padding-left: 30px;
+}
+#cartIcon{
+    float: right;
+    padding-right: 30px;
+}
+
+/*button scroll*/
+.button {
+    display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgba(170, 152, 152, 0.596);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+.button:hover {
+  background-color: #555;
+}
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+.button-form{
+    border: none;
+}
+
+/*footer*/
+.page-footer{
+    background-color: rgba(172, 171, 171, 0.463);
+    padding: 32px 16px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 24px;
+    flex-wrap: wrap-reverse;
+}
+.footerLinks ul{
+    list-style: none;
+}
+.footerLinks ul li{
+    margin: 8px 0;
+}
+.footerLinks ul li a{
+    text-decoration: none;
+    color: rgb(52, 49, 49);
+}
+.footerLinks ul li a:hover {
+    color: rgb(55, 102, 212);
+}
+.title-footer{
+    color: rgb(55, 102, 212);
+    font-weight: bold;
+    margin-top: 20px;
+}
+.logo-footer{
+    position: relative;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 30px;
+    width: 100px;
+    background-color: transparent;
+    float: left;
+    clear: both;
+}
+
+
+@media only screen and (max-width : 700px)
+{
+    .logo{
+        padding: 0;
+    }
+}
+@media only screen and (max-width : 460px)
+{
+ 	.container 
+	{
+		width: 95%;
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width: 860px) {
+    .container-cart{
+        font-size: 0;
+    }
+}
+@media screen and (max-width: 570px) {
+    .container-cart{
+        float: left;
+        position: absolute;
+    }
+}
+@media screen and (max-width: 700px){
+    .logo {
+        margin-left: 2px;
+        margin-right: 1px;
+        margin-top: 3px;
+    }
+}
+@media screen and (max-width: 600px) {
+  .menu-bar ul {
+    float: none;
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+.title{
+   margin-top: 400px;
+}
+}
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/*responsive footer*/
+@media only screen and (max-width: 620px) {
+    .page-footer {
+        justify-content: start;
+    }
+
+    .logo-footer {
+        flex-basis: 100%;
+    }
+
+    .footerLinks {
+        flex-basis: 1;
+    }
+}
